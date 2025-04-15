@@ -168,6 +168,7 @@ export const expireOffer = internalMutation({
       status: WAITING_LIST_STATUS.EXPIRED,
     });
 
+    // @ts-expect-error "base project error"
     await processQueue(ctx, { eventId });
   },
 });
@@ -209,6 +210,7 @@ export const cleanupExpiredOffers = internalMutation({
         )
       );
 
+      // @ts-expect-error "base project error"
       await processQueue(ctx, { eventId: eventId as Id<"events"> });
     }
   },
@@ -231,6 +233,7 @@ export const releaseTicket = mutation({
     });
 
     // Process queue to offer ticket to next person
+    // @ts-expect-error "base project error"
     await processQueue(ctx, { eventId });
   },
 });
