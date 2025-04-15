@@ -7,5 +7,7 @@ Para a questão de expansão de produto, ele já prevê criação de eventos cus
 
 Isso o torna mais completo e aderente ao modelo de negócio de um marketplace de eventos e ingressos como o Sympla.
 
+Observação: Realizei 2 commits para configurações do deploy na vercel, mas nenhuma feature foi implementada nem modificada.
+
 # Oficial README:
 https://github.com/sonnysangha/ticket-marketplace-saas-nextjs15-convex-clerk-stripe-connect/blob/main/README.md
